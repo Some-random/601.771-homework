@@ -13,7 +13,7 @@ except ImportError:
     pass  # If LoRA isn't installed, the script will still run for normal fine-tuning.
 
 # Load SST2 dataset from Huggingface
-dataset = load_dataset("glue", "sst2")
+dataset = load_dataset("stanfordnlp/sst2")
 
 # Load the tokenizer and the model
 tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
